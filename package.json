@@ -1,0 +1,102 @@
+{
+  "name": "why-react-code-looks-like-that",
+  "displayName": "Why React Code Looks Like That",
+  "description": "Visualize which parts of TSX come from JavaScript, TypeScript, JSX, or React",
+  "version": "1.0.0",
+  "publisher": "dfrancour",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfrancour/why-react-code-looks-like-that"
+  },
+  "homepage": "https://github.com/dfrancour/why-react-code-looks-like-that",
+  "bugs": {
+    "url": "https://github.com/dfrancour/why-react-code-looks-like-that/issues"
+  },
+  "author": "dfrancour",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.108.0"
+  },
+  "categories": [
+    "Other",
+    "Education",
+    "Programming Languages"
+  ],
+  "keywords": [
+    "tsx",
+    "jsx",
+    "react",
+    "typescript",
+    "syntax",
+    "highlighter",
+    "educational"
+  ],
+  "activationEvents": [
+    "onLanguage:typescriptreact",
+    "onLanguage:javascriptreact"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "why-react-code-looks-like-that.toggle",
+        "title": "Why React Code Looks Like That: Toggle Highlighting"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "whyReactCodeLooksLikeThatLegend",
+          "name": "Why React Code Looks Like That",
+          "when": "whyReactCodeLooksLikeThatActive"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Why React Code Looks Like That",
+      "properties": {
+        "whyReactCodeLooksLikeThat.colors.javascript": {
+          "type": "string",
+          "default": "#f59e0b",
+          "description": "Text color for JavaScript syntax (amber)"
+        },
+        "whyReactCodeLooksLikeThat.colors.react": {
+          "type": "string",
+          "default": "#10b981",
+          "description": "Text color for React-specific syntax (emerald)"
+        },
+        "whyReactCodeLooksLikeThat.colors.jsx": {
+          "type": "string",
+          "default": "#8b5cf6",
+          "description": "Text color for JSX syntax (violet)"
+        },
+        "whyReactCodeLooksLikeThat.colors.typescript": {
+          "type": "string",
+          "default": "#3b82f6",
+          "description": "Text color for TypeScript syntax (blue)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^25.1.0",
+    "@types/vscode": "^1.108.1",
+    "eslint": "^9.39.2",
+    "typescript-eslint": "^8.54.0",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
+}

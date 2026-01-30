@@ -2,7 +2,7 @@
   "name": "why-react-code-looks-like-that",
   "displayName": "Why React Code Looks Like That",
   "description": "Visualize which parts of TSX come from JavaScript, TypeScript, JSX, or React",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "dfrancour",
   "license": "MIT",
   "repository": {

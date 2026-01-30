@@ -6,7 +6,7 @@ This extension accompanies the blog post ["Why React Code Looks Like That"](http
 
 | Before | After |
 |--------|-------|
-| ![Standard syntax highlighting](before.png) | ![Color-coded by origin layer](after.png) |
+| ![Standard syntax highlighting](https://github.com/dfrancour/why-react-code-looks-like-that/blob/main/before.png?raw=true) | ![Color-coded by origin layer](https://github.com/dfrancour/why-react-code-looks-like-that/blob/main/after.png?raw=true) |
 
 ## Usage
 

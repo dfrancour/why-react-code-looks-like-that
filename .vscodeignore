@@ -9,13 +9,13 @@ pnpm-lock.yaml
 **/.eslintrc.json
 **/*.map
 **/*.ts
-!out/**
 node_modules/**
 *.vsix
 AGENTS.md
 CLAUDE.md
 .claude/**
 eslint.config.mjs
+esbuild.js
 vitest.config.*
 **/*.test.ts
 **/*.spec.ts
